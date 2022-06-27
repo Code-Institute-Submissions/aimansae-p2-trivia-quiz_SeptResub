@@ -33,8 +33,8 @@ input, .quiz-form button  {
 
 input{
     margin-bottom: 5%;
-    padding: 5% 0;
-    font-size:120% ;
+    padding: 4% 0;
+    font-size:125% ;
     text-align: center;
    
 }
@@ -43,13 +43,13 @@ input{
   padding: 5%;
   font-family:'Abhaya', sans-serif;
   font-weight:bold ;
-  font-size: 135%;
+  font-size: 115%;
   box-shadow: 1px -1px 30px 2px yellow;
   border: none;
   transition: transform .2s;
 }
 .quiz-form button:hover{
     box-shadow: 1px -1px 30px 2px green;
-    tansform: scale(1.2);
+    transform: scale(1.2);
     font-size: 140%;
 } 

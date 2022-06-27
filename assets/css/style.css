@@ -24,22 +24,32 @@ body{
     width:30%;
 }
 
-input, button {
+input, .quiz-form button  {
     display: block;
     width:100%;
+    font-style: italic;
+    background: transparent;
 }
 
 input{
-    margin-bottom: 2%;
+    margin-bottom: 5%;
+    padding: 5% 0;
+    font-size:120% ;
+    text-align: center;
+   
 }
 
-button {
+.quiz-form button {
   padding: 5%;
   font-family:'Abhaya', sans-serif;
   font-weight:bold ;
   font-size: 135%;
-  font-style: italic;
   box-shadow: 1px -1px 30px 2px yellow;
   border: none;
-  background: transparent;
+  transition: transform .2s;
 }
+.quiz-form button:hover{
+    box-shadow: 1px -1px 30px 2px green;
+    tansform: scale(1.2);
+    font-size: 140%;
+} 

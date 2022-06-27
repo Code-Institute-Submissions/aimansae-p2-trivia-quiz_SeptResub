@@ -1,6 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Roboto:wght@300&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
 
 body{
-    background:greenyellow;
+    font-family: 'Roboto', sans-serif;
+    background: aqua;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height:100vh;
+}
+
+.welcome-quiz{
+    width:30%;
+}
+
+input, button {
+    display: block;
+    width:100%;
+}
+
+input{
+    margin-bottom: 2%;
+}
+
+button {
+  padding: 5%;
+  font-family:'Abhaya', sans-serif;
+  font-weight:bold ;
+  font-size: 135%;
+  font-style: italic;
+  box-shadow: 1px -1px 30px 2px yellow;
+  border: none;
+  background: transparent;
 }

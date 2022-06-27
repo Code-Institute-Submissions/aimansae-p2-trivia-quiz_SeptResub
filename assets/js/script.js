@@ -6,5 +6,8 @@ function sendForm (event) {
     // code to store player's name
 
     sessionStorage.setItem('username', quizForm);
+
+    //start game upon click on 'start gme'
+    location.href='quiz.html';
     console.log(quizForm);
 }

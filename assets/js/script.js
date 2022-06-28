@@ -7,7 +7,7 @@ function sendForm (event) {
 
     sessionStorage.setItem('username', quizForm);
 
-    //start game upon click on 'start gme'
+    //start game upon click on 'start game'
     location.href='quiz.html';
     console.log(quizForm);
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,23 +10,29 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Fun Quizz</title>
 </head>
+
 <body>
     <div class="container">
-     <div class= "welcome-quiz">
-        <form class="quiz-form" onsubmit="sendForm(event)" name="quiz-form">
-            <input type="text" id="username" name="username" placeholder="Insert a username:" required>
-            <button type="submit">START QUIZ</button>
+        <div class="game">
+            <div class="game-header">
+                <div class="quiz-player"></div>
+                <h2>Welcome! lets start the quiz!</h2>
+                <div class="timer">
+                    <span>00:00</span>
+                </div>
+            </div>
+
+            <div class="questions-section"></div>
 
 
-        </form>
 
 
 
+        </div>
 
-     </div>   
-        
-        
-        </div
+
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

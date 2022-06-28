@@ -53,3 +53,25 @@ input{
     transform: scale(1.2);
     font-size: 140%;
 } 
+
+/*style for quiz.html page*/
+
+.game{
+   width:90vw;
+   height:70vh;
+   display: grid;
+   grid-template-rows: 10% auto;
+
+}
+.game-header{
+    background: beige;
+    display:flex ;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 0 2% 0 2%;
+}
+
+.questions-section{
+    background: rgb(162, 162, 7);
+}

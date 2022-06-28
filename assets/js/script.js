@@ -1,17 +1,7 @@
-function sendForm(event) {
-    event.preventDefault();
-    let quizForm = document.forms['quiz-form']['username'].value;
-    console.log('SEND');
+window.onload = function () {
+    showQuestion(0);
 
-    // code to store player's name
-
-    sessionStorage.setItem('username', quizForm);
-
-    //start game upon click on 'start game'
-    location.href = 'quiz.html';
-    console.log(quizForm);
 }
-
 // questions list
 
 let questions = [
@@ -72,7 +62,7 @@ let questions = [
     },
     {
         number: 6,
-        question: " What country is the biggest (surface?",
+        question: " What country is the biggest (surface?)",
         answer: "France",
         options: [
             "France",
@@ -104,17 +94,6 @@ let questions = [
 
     },
     {
-        number: 8,
-        question: "  What is NOT a Christian holiday in NL?",
-        answer: "King's Day",
-        options: [
-            "Easter",
-            "Ascension",
-            "Pentecost",
-            "King's Day"]
-
-    },
-    {
         number: 9,
         question: "   What is Italy’s shape similar to?",
         answer: "A boot",
@@ -123,17 +102,6 @@ let questions = [
             "A dog",
             "A boot",
             "A dragon"]
-
-    },
-    {
-        number: 9,
-        question: "What happens at La Scala?",
-        answer: "Opera",
-        options: [
-            "Criminal Trials",
-            "Fashion Shows",
-            "Opera",
-            "Kids Programs"]
 
     },
     {
@@ -148,3 +116,61 @@ let questions = [
 
     }
 ];
+
+
+window.onload = function () {
+    showQuestion();
+}
+
+
+function sendForm(event) {
+    event.preventDefault();
+    let quizForm = document.forms['quiz-form']['username'].value;
+    console.log('SEND');
+
+    // code to store player's name
+
+    sessionStorage.setItem('username', quizForm);
+
+    //start game upon click on 'start game'
+    location.href = 'quiz.html';
+    console.log(quizForm);
+}
+
+
+let countQuestions = 0;
+function nextQuestion() {
+    countQuestions++;
+    showQuestion(countQuestions);
+
+}
+
+function showQuestion(count){
+    let question= document.getElementById('questions')
+    question.innerHTML = 
+    `<h3>${questions[count].question}</h3>
+    <div class="response-div" id="question">
+                <button class="answers">${questions[count].options[0]}</button>
+                <button class="answers">${questions[count].options[1]}</button>
+                <button class="answers">${questions[count].options[2]}</button>
+                <button class="answers">${questions[count].options[3]}</button>
+                </div>`;
+                active ()  
+}
+function active () {
+    let options = document.querySelectorAll('button.answers');
+    for(let i=0; i<options.length; i++){
+        options[i].onclick = function() {
+            for(let x=0; x<options.length; x++){
+                if(options[x].classList.contains('active')){
+                    options[x].classList.remove('active');
+                }
+
+            }
+
+            options[i].classList.add('active');
+
+        }
+    }
+
+};

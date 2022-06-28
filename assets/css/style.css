@@ -117,4 +117,15 @@ input {
     margin-top: 10%;
     height: 5vh;
     width: 8vw;
+    transition: transform .2s;
+    border:none;
+    border-radius: 8px;
+    
+}
+
+.next-question:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 2px 10px 2px green;
+    font-weight: bold;
+    
 }

@@ -69,9 +69,35 @@ input{
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    padding: 0 2% 0 2%;
+    padding-right:2%;
 }
 
 .questions-section{
     background: rgb(162, 162, 7);
+}
+
+.quiz-player {
+    padding-left: 2%;
+    display: flex;
+    align-items: center;
+}
+.response-div{
+    display: grid;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap:7%;
+    height:15%;
+    margin:8% 8%;
+   
+}
+.answers{
+    background: yellow;
+    border-radius: 8px;
+    margin: 7 ;
+    font-weight: 900;
+    letter-spacing: 2px;
+    height:90%;
+     margin-top: 10%;
+    margin-bottom: 2%;
 }

@@ -4,10 +4,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
     background: aqua;
 }
@@ -16,88 +16,105 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width:100vw;
-    height:100vh;
+    width: 100vw;
+    height: 100vh;
 }
 
-.welcome-quiz{
-    width:30%;
+.welcome-quiz {
+    width: 30%;
 }
 
-input, .quiz-form button  {
+input,
+.quiz-form button {
     display: block;
-    width:100%;
+    width: 100%;
     font-style: italic;
     background: transparent;
 }
 
-input{
+input {
     margin-bottom: 5%;
     padding: 4% 0;
-    font-size:125% ;
+    font-size: 125%;
     text-align: center;
-   
+
 }
 
 .quiz-form button {
-  padding: 5%;
-  font-family:'Abhaya', sans-serif;
-  font-weight:bold ;
-  font-size: 115%;
-  box-shadow: 1px -1px 30px 2px yellow;
-  border: none;
-  transition: transform .2s;
+    padding: 5%;
+    font-family: 'Abhaya', sans-serif;
+    font-weight: bold;
+    font-size: 115%;
+    box-shadow: 1px -1px 30px 2px yellow;
+    border: none;
+    transition: transform .2s;
 }
-.quiz-form button:hover{
+
+.quiz-form button:hover {
     box-shadow: 1px -1px 30px 2px green;
     transform: scale(1.2);
     font-size: 140%;
-} 
+}
 
 /*style for quiz.html page*/
 
-.game{
-   width:90vw;
-   height:70vh;
-   display: grid;
-   grid-template-rows: 10% auto;
+.game {
+    width: 90vw;
+    height: 70vh;
+    display: grid;
+    grid-template-rows: 10% auto;
 
 }
-.game-header{
+
+.game-header {
     background: beige;
-    display:flex ;
+    display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
-    padding-right:2%;
+    padding-right: 2%;
 }
 
-.questions-section{
+.questions-section {
     background: rgb(162, 162, 7);
 }
+
+.questions-section h3 {
+    margin: 5% 2%;
+}
+
 
 .quiz-player {
     padding-left: 2%;
     display: flex;
     align-items: center;
 }
-.response-div{
+
+.response-div {
     display: grid;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    gap:7%;
-    height:15%;
-    margin:8% 8%;
-   
+    gap: 7%;
+    height: 15%;
+    margin: 5% 8%;
+
 }
-.answers{
+
+.answers {
     background: yellow;
     border-radius: 8px;
-    margin: 7 ;
     font-weight: 900;
     letter-spacing: 2px;
-    height:90%;
-     margin-top: 10%;
+    height: 90%;
+    margin: 10% 7%;
     margin-bottom: 2%;
+}
+
+.next-question {
+    position: relative;
+    left: 87%;
+    margin-top: 10%;
+    height: 5vh;
+    width: 8vw;
 }

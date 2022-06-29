@@ -177,24 +177,18 @@ input:hover {
 }
 .play-again button{
     position:absolute;
-    top:58%;
-    left:42%;
-    margin-left:3%;
-    padding:1%;
-    font-family: 'Abhaya', sans-serif;
-    text-transform:uppercase;
-    font-weight: bold;
-    font-size: 110%;
-    border: none;
+    left:45vw;
+    margin-top:5vw;
+    font-size:110%;
     transition: transform .2s;
 }
 
 .play-again button:hover {
     box-shadow: 1px -1px 30px 2px #fff;
     transform: scale(1);
-    color: #fff;
     background: #2afbde;
 }
+
 
 
 /*media queries for smaller devices max width 600px*/
@@ -243,6 +237,21 @@ input:hover {
         height: 9%;
         width: 24%;
         top: 10%;
+    }
+
+    /*queries for finish.html page*/
+    .play-again button {
+        font-size:4vw;
+        margin-left:-6%;
+        margin-top: 8%;
+
+    }
+    .congrats{
+        font-size:4vw;
+    }
+     .congrats p{
+        font-size:4vw;
+        margin:1%;
     }
 }
 /*media queries for  devices min width 600px and max width: 1000px*/

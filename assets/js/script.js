@@ -118,10 +118,6 @@ let questions = [
 ];
 
 
-window.onload = function () {
-    showQuestion();
-}
-
 
 function sendForm(event) {
     event.preventDefault();
@@ -138,7 +134,7 @@ function sendForm(event) {
 }
 
 
-let countQuestions = 0;
+ let countQuestions = 0;
 let score = 0;
 function nextQuestion() {
     if (countQuestions == questions.length -1){
@@ -146,7 +142,7 @@ function nextQuestion() {
         return;
     }
     let clickedAnswer = document.querySelector('button.answers.active').innerHTML;
-    // verify if payers answer is correct
+    // verify if payers answer is correct, gets 10 points
     if (clickedAnswer == questions[countQuestions].answer) {
         score += 10;
         sessionStorage.setItem('userScore', score);
@@ -177,6 +173,7 @@ function active() {
                 if (options[x].classList.contains('active')) {
                     options[x].classList.remove('active');
                 }
+            
 
             }
 

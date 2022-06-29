@@ -155,16 +155,45 @@ input:hover {
     background: greenyellow;
     color: white;
 }
-/*syle for correct and wrong answer*/
+/*style for correct and wrong answer*/
 .correct {background: green;}
 
 .incorrect {background: rgb(198, 135, 135);}
 
 /*style for finish.html page */
 
-.medal{ 
+.congrats {
     color:#fff;
-    font-size:8vw;
+    font-size:2vw;
+}
+.medal{ 
+
+    font-size:2vw;
+}
+
+.congrats p {
+    margin-left:4%;
+    font-size:2vw;
+}
+.play-again button{
+    position:absolute;
+    top:58%;
+    left:42%;
+    margin-left:3%;
+    padding:1%;
+    font-family: 'Abhaya', sans-serif;
+    text-transform:uppercase;
+    font-weight: bold;
+    font-size: 110%;
+    border: none;
+    transition: transform .2s;
+}
+
+.play-again button:hover {
+    box-shadow: 1px -1px 30px 2px #fff;
+    transform: scale(1);
+    color: #fff;
+    background: #2afbde;
 }
 
 

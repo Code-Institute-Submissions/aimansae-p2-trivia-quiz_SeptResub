@@ -139,30 +139,38 @@ function sendForm(event) {
 
 
 let countQuestions = 0;
+let score = 0;
 function nextQuestion() {
+    let clickedAnswer = document.querySelector('button.answers.active').innerHTML;
+    // verify if payers answer is correct
+    if (clickedAnswer == questions[countQuestions].answer) {
+        score += 10;
+        sessionStorage.setItem('userScore', score);
+    }
+   
     countQuestions++;
     showQuestion(countQuestions);
 
 }
 
-function showQuestion(count){
-    let question= document.getElementById('questions')
-    question.innerHTML = 
-    `<h3>${questions[count].question}</h3>
-    <div class="response-div" id="question">
+function showQuestion(count) {
+    let question = document.getElementById('questions')
+    question.innerHTML =
+        `<h3>${questions[count].question}</h3>
+    <div class="response-div">
                 <button class="answers">${questions[count].options[0]}</button>
                 <button class="answers">${questions[count].options[1]}</button>
                 <button class="answers">${questions[count].options[2]}</button>
                 <button class="answers">${questions[count].options[3]}</button>
                 </div>`;
-                active ()  
+    active()
 }
-function active () {
+function active() {
     let options = document.querySelectorAll('button.answers');
-    for(let i=0; i<options.length; i++){
-        options[i].onclick = function() {
-            for(let x=0; x<options.length; x++){
-                if(options[x].classList.contains('active')){
+    for (let i = 0; i < options.length; i++) {
+        options[i].onclick = function () {
+            for (let x = 0; x < options.length; x++) {
+                if (options[x].classList.contains('active')) {
                     options[x].classList.remove('active');
                 }
 
@@ -170,7 +178,7 @@ function active () {
 
             options[i].classList.add('active');
 
-        }
+        };
     }
 
-};
+}

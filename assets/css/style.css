@@ -155,6 +155,10 @@ input:hover {
     background: greenyellow;
     color: white;
 }
+/*syle for correct and wrong answer*/
+.correct {background: green;}
+
+.incorrect {background: rgb(198, 135, 135);}
 
 /*style for finish.html page */
 

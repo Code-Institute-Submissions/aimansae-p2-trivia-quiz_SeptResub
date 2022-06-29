@@ -6,15 +6,11 @@
     box-sizing: border-box;
 
 }
-html{
-    background: url('../images/background-image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height:100%;
-    overflow: hidden;
-}
+/*body font and background style*/
 body {
     font-family: 'Roboto', sans-serif;
-    background: aqua;
+    background: url('../images/background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .container {
@@ -34,7 +30,7 @@ input,
     display: block;
     width: 100%;
     font-style: italic;
-    background: transparent;
+    background: #fffffff5;
 }
 
 input {
@@ -44,21 +40,25 @@ input {
     text-align: center;
 
 }
+input:hover{
+    box-shadow: 1px -1px 30px 2px #f8fa13;
+}
 
 .quiz-form button {
     padding: 5%;
     font-family: 'Abhaya', sans-serif;
     font-weight: bold;
     font-size: 115%;
-    box-shadow: 1px -1px 30px 2px yellow;
     border: none;
     transition: transform .2s;
 }
 
 .quiz-form button:hover {
-    box-shadow: 1px -1px 30px 2px green;
+    box-shadow: 1px -1px 30px 2px #f8fa13;
     transform: scale(1);
     font-size: 140%;
+    color: #fff;
+    background: #dcf403f2;
 }
 
 /*style for quiz.html page*/
@@ -68,25 +68,33 @@ input {
     height: 70vh;
     display: grid;
     grid-template-rows: 10% auto;
+    box-shadow: 3px 1px 20px 5px #fff;
+    background: transparent;
 
 }
 
 .game-header {
-    background: beige;
+    background: transparent;
     display: flex;
     justify-content: space-between;
     text-align: center;
     align-items: center;
     padding-right: 2%;
+    color:#fff;
+    border: solid 1px white;
+    font-weight:900;
 }
 
-.questions-section {
-    background: rgb(162, 162, 7);
-}
+
 
 .questions-section h3 {
     margin: 5% 2%;
+    color: white;
+    font-weight: 900;
+    font-size: x-large;
+    text-align: center;
 }
+
 
 
 .quiz-player {
@@ -105,9 +113,9 @@ input {
     margin: 5% 8%;
 
 }
-
+/*style for the 4 answer option*/
 .answers {
-    background: yellow;
+    background:#fff;
     border-radius: 8px;
     font-weight: 900;
     letter-spacing: 2px;
@@ -115,30 +123,39 @@ input {
     margin: 10% 7%;
     margin-bottom: 2%;
     border:none;
+    font-size:larger;
+    letter-spacing: 2px;
 }
 .answers:hover{
     border:2px solid black;
-    box-shadow: 1px 2px 10px 2px #fff;
+    box-shadow: 1px 2px 10px 2px #15e4e2;
 }
+
+/*next question button style*/
 
 .next-question {
     position: relative;
-    left: 87%;
-    height: 5vh;
-    width: 8vw;
+    left: 88%;
+    height: 6.5vh;
+    width: 9.5vw;
     transition: transform .2s;
     border:none;
-    border-radius: 8px;
+    font-weight:900;
+    letter-spacing: 2px;
+    background:#fff;
     
 }
 
 .next-question:hover{
     transform: scale(1.1);
-    box-shadow: 1px 2px 10px 2px green;
+    box-shadow: 1px 2px 10px 2px #15e4e2;
     font-weight: bold;
     
 }
+/*style for active js class */
 .active{
     background: greenyellow;
     color:white; 
 }
+/*media queries*/
+

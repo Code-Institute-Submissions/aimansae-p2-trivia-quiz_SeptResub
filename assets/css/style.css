@@ -194,7 +194,7 @@ input:hover {
 /*media queries for smaller devices max width 600px*/
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width:320px) and (max-width: 600px) {
 /* index.html page*/
     input,
     .quiz-form button {
@@ -219,11 +219,13 @@ input:hover {
     /*style for quiz.html page*/
 
     .game-header {
-        font-size: 75%;
+        font-size: 65%;
+
     }
 
     .questions-section h3 {
-        font-size: 100%;
+        font-size: 90%;
+        margin-top:20%;
     }
 
     .response-div {
@@ -233,11 +235,14 @@ input:hover {
 
     .next-question {
 
-        left: 65%;
+        left: 40%;
         height: 9%;
-        width: 24%;
+        width: 27%;
+        padding:1% 1%;
         top: 10%;
+        font-size:80%;
     }
+
 
     /*queries for finish.html page*/
     .play-again button {

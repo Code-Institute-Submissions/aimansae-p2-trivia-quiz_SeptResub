@@ -141,6 +141,10 @@ function sendForm(event) {
 let countQuestions = 0;
 let score = 0;
 function nextQuestion() {
+    if (countQuestions == questions.length -1){
+        location.href= "finish.html";
+        return;
+    }
     let clickedAnswer = document.querySelector('button.answers.active').innerHTML;
     // verify if payers answer is correct
     if (clickedAnswer == questions[countQuestions].answer) {

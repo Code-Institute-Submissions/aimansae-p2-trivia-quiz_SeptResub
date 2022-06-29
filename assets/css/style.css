@@ -6,7 +6,9 @@
     box-sizing: border-box;
 
 }
-
+html{
+    background: url(..images/background-image.jpg);
+}
 body {
     font-family: 'Roboto', sans-serif;
     background: aqua;

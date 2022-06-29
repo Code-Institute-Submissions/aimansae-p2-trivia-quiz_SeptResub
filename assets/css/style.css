@@ -149,17 +149,26 @@ input:hover {
 
 }
 
+
 /*style for active js class */
 .active {
     background: greenyellow;
     color: white;
 }
 
+/*style for finish.html page */
+
+.medal{ 
+    color:#fff;
+    font-size:8vw;
+}
+
+
 /*media queries for smaller devices max width 600px*/
-/* index.html page*/
+
 
 @media only screen and (max-width: 600px) {
-
+/* index.html page*/
     input,
     .quiz-form button {
         width: 40vw;

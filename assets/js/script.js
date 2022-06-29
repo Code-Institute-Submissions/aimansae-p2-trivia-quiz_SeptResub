@@ -122,7 +122,6 @@ let questions = [
 function sendForm(event) {
     event.preventDefault();
     let quizForm = document.forms['quiz-form']['username'].value;
-    console.log('SEND');
 
     // code to store player's name
 
@@ -130,15 +129,16 @@ function sendForm(event) {
 
     //start game upon click on 'start game'
     location.href = 'quiz.html';
-    console.log(quizForm);
+
 }
 
 
- let countQuestions = 0;
+let countQuestions = 0;
 let score = 0;
+
 function nextQuestion() {
-    if (countQuestions == questions.length -1){
-        location.href= "finish.html";
+    if (countQuestions == questions.length - 1) {
+        location.href = "finish.html";
         return;
     }
     let clickedAnswer = document.querySelector('button.answers.active').innerHTML;
@@ -147,7 +147,7 @@ function nextQuestion() {
         score += 10;
         sessionStorage.setItem('userScore', score);
     }
-   
+
     countQuestions++;
     showQuestion(countQuestions);
 
@@ -173,7 +173,7 @@ function active() {
                 if (options[x].classList.contains('active')) {
                     options[x].classList.remove('active');
                 }
-            
+
 
             }
 

@@ -46,7 +46,8 @@ The idea is to create a good looking quiz that immediately proves it's purpose
 
  ### Colours Chosen
 
- The colors chosen ad mainly dark and eyecatching thanks to the background chosen. Here is the palette: <br>
+ The colors chosen ad mainly dark and eyecatching thanks to the background chosen. Here is the palette: 
+
  ![Color Palette](assets/images/colors-palette.png)
 
  ### Typography
@@ -54,6 +55,102 @@ The idea is to create a good looking quiz that immediately proves it's purpose
  I chose 2 mail Google Fonts: Abhaya and Roboto, directly imported in my style.css file. "Abhaya" is used to the answers option, meanwhile "Roboto" of the questions.
 
  ### Images
+
+ For all pages one background is set, with dark and eyecatching colors as mentioned above. The main goal was to give the visitor immediately an idea of the site is about. 
+
+ ![background Image](assets/images/background-image.jpg)
+
+## Features
+
+### Home Page
+
+The Home Page lands to a from where the player has to select a username in order to play the game. The "hover" effect placed on the "start quiz" button makes user's experience even more simple nad pleasant. 
+
+![Home Page](assets/images/home-page-screenshot.png)
+
+### Start quiz page
+
+Upon clicking on "Start Quiz button" in directs the user to the quiz.html showing the first question. Once the player selects the answer the option button's background turns into rgb(125 45 207) to show them which answer they provided, upon clicking on "next question" button js code will turn the answer green if it is correct, red if it's not. In the second case if the selected answer is not correct it will show the right one before preceding to the next question.
+
+![Purple option](assets/images/question-purple-background.png)
+
+This is the what the players sees once he selected an answer:
+
+![Correct/Incorrect answer](assets/images/right-wrong-answer.png)
+
+### Finish Page
+
+After completing the 10 questions the player will see the last page that congrutalates the ad provided with a "Replay" button if the want to play the game again
+
+![Finish Page](assets/images/finish-page-screenshot.png)
+
+## Technologies used
+
+### Technologies used:
+- [HTML](https://bit.ly/3uAoc0S)
+- [CSS](https://bit.ly/3yTb9KH)
+- [JavaScript](https://bit.ly/3c3CH71)
+
+## Testing
+- The testing through out the entire project as I was building it via Google Dev Tool
+- The form presents a required attribute so if the user doesn't till in a name a warning will appear
+- All buttons were tested and are working as programmed
+
+### Upcoming Features
+Due to all the dificulties faces in future i plan to implement additional features for a better experience. 
+- A score function will be added to keep track of the user's score and this will be shown at the end of the game
+- A 15 seconds timer per question will be added to keep the excitement and challenge
+- An option to share the scores and results will be implemented so that the player can share his results with anyone
+
+
+### Validator Testing
+
+- HTML : testing is made via [W3C Markup Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Faimansae.github.io%2Fp2-trivia-quiz%2Ffinish.html)
+
+![HTML Validator](assets/images/HTML-validator.png)
+- CSS : testing is made via [W3C CSS Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Faimansae.github.io%2Fp2-trivia-quiz%2Ffinish.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
+
+![HTML Validator](assets/images/CSS-validator.png)
+
+- JavaScript : Testing is made through [JS Hint](https://jshint.com/) and no error is found.
+
+- Lighthouse: Testing is made for both devices Desktop and Mobile and the resuls is as follows:
+
+![Lighthouse Testing](assets/images/Lighthouse-testing.png)
+
+### Responsivness
+
+The site is build for big and small devices using media query. It was quite challenging as the "Next question" button for smaller devices could't really fit the container and adapt correctly. This was fixed using left, top and padding in css. Now the game is playable with a decent adaptation on all devices.
+
+## Deployment
+
+The deployment of my siteis made wia GithHub pages, theese are the steps I took:
+
+1. Log into GitHub
+2. Find repository
+3. Click on "Settngs" buttom
+3. Select "Pages" on left-hand sidebar
+4. Under Source select main as branch
+5. Click Save
+6. On the top of the page the [live](https://aimansae.github.io/p2-trivia-quiz/index.html) link to the website is generated
+
+## Credits
+
+I found JS very challenging, different parts of the code were not working due to small oversights. Help and suggestion were mainly taken from other fellow students on slack and tutors. In addition I must thank Mike A. who helped me directly with correct and incorrect coloring issue with great advices and tips.
+Further tips and suggestions form my mentor Martina we definitely lifesavior.
+
+Additional sources were highly consulted such as [Stack Overflow](https://stackoverflow.com/) and numerous Youtube tutorials.
+
+## Media
+- Background Image is taken from [Pixaby](https://pixabay.com/)
+- Responsive screenshot for Readme File is made via [Am I responsive](https://ui.dev/amiresponsive)
+- Colors Palette is generated via [Coolors](https://coolors.co/)
+
+
+
+
+
+
 
 
 

@@ -37,7 +37,7 @@ const active = document.querySelector('.active');
             for (let i = 0; i < options.length; i++) {
       
                 if (options[i].innerHTML == correctAnswer) {
-                  options[i].classList.add('green-answer')
+                  options[i].classList.add('green-answer');
                 }
             }
         }
@@ -45,14 +45,14 @@ const active = document.querySelector('.active');
     countQuestions++;
     setTimeout(() => {
         showQuestion(countQuestions);
-    }, 1000)
+    }, 1000);
 
 }
 
 //show next question when the button is clicked
 
 function showQuestion(count) {
-    let question = document.getElementById('questions')
+    let question = document.getElementById('questions');
     question.innerHTML =
         `<h3>${questions[count].question}</h3>
     <div class="response-div">
@@ -61,7 +61,7 @@ function showQuestion(count) {
                 <button class="answers">${questions[count].options[2]}</button>
                 <button class="answers">${questions[count].options[3]}</button>
                 </div>`;
-    activeCheck()
+    activeCheck();
 }
 function activeCheck() {
     let options = document.querySelectorAll('button.answers');

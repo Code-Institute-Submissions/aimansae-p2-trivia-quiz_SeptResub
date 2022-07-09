@@ -83,6 +83,9 @@ input:hover {
     border: solid 1px white;
     font-weight: 900;
 }
+.medal-logo{
+    font-size: 150%;
+}
 
 .questions-section h3 {
     margin: 5% 2%;
@@ -108,7 +111,7 @@ input:hover {
     margin: 5% 8%;
 }
 
-/*style for the 4 answer option*/
+/*style for the 4 answers option*/
 .answers {
     background: #fff;
     border-radius: 8px;
@@ -152,13 +155,9 @@ input:hover {
 
 /*style for active js class */
 .active {
-    background: greenyellow;
+    background: rgb(192 45 207);
     color: white;
 }
-/*style for correct and wrong answer*/
-.correct {background: green;}
-
-.incorrect {background: rgb(198, 135, 135);}
 
 /*style for finish.html page */
 
@@ -189,8 +188,10 @@ input:hover {
     background: #2afbde;
 }
 
+/*style to show correct asnwer is player clicks on the wrong one */
+
 .green-answer {
-    background-color: green;
+    background-color: #31e631;
 }
 
 

@@ -33,12 +33,19 @@ const active = document.querySelector('.active');
         active.style.backgroundColor = 'green';
         } else {
             active.style.backgroundColor = 'red';
-           }
+            let options = document.querySelectorAll('button.answers');
+            for (let i = 0; i < options.length; i++) {
+      
+                if (options[i].innerHTML == correctAnswer) {
+                  options[i].classList.add('green-answer')
+                }
+            }
+        }
        
     countQuestions++;
     setTimeout(() => {
         showQuestion(countQuestions);
-    }, 1000)
+    }, 2000)
 
 }
 
@@ -54,9 +61,9 @@ function showQuestion(count) {
                 <button class="answers">${questions[count].options[2]}</button>
                 <button class="answers">${questions[count].options[3]}</button>
                 </div>`;
-    active()
+    activeCheck()
 }
-function active() {
+function activeCheck() {
     let options = document.querySelectorAll('button.answers');
     for (let i = 0; i < options.length; i++) {
         options[i].onclick = function () {

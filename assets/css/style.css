@@ -189,6 +189,10 @@ input:hover {
     background: #2afbde;
 }
 
+.green-answer {
+    background-color: green;
+}
+
 
 
 /*media queries for smaller devices max width 600px*/

@@ -25,23 +25,23 @@ function nextQuestion() {
         location.href = "finish.html";
         return;
     }
-let clickedAnswer = document.querySelector('button.answers.active').textContent;
-let correctAnswer = questions[countQuestions].answer;
-// verify if players answer is correct
-const active = document.querySelector('.active');
-       if (clickedAnswer == correctAnswer){
+    let clickedAnswer = document.querySelector('button.answers.active').textContent;
+    let correctAnswer = questions[countQuestions].answer;
+    // verify if players answer is correct
+    const active = document.querySelector('.active');
+    if (clickedAnswer == correctAnswer) {
         active.style.backgroundColor = '#31e631';
-        } else {
-            active.style.backgroundColor = 'red';
-            let options = document.querySelectorAll('button.answers');
-            for (let i = 0; i < options.length; i++) {
-      
-                if (options[i].innerHTML == correctAnswer) {
-                  options[i].classList.add('green-answer');
-                }
+    } else {
+        active.style.backgroundColor = 'red';
+        let options = document.querySelectorAll('button.answers');
+        for (let i = 0; i < options.length; i++) {
+
+            if (options[i].innerHTML == correctAnswer) {
+                options[i].classList.add('green-answer');
             }
         }
-       
+    }
+
     countQuestions++;
     setTimeout(() => {
         showQuestion(countQuestions);

@@ -83,7 +83,8 @@ input:hover {
     border: solid 1px white;
     font-weight: 900;
 }
-.medal-logo{
+
+.medal-logo {
     font-size: 150%;
 }
 
@@ -136,8 +137,8 @@ input:hover {
     position: relative;
     left: 84%;
     height: 8%;
-    top:5%;
-    padding:1% 1%;
+    top: 5%;
+    padding: 1% 1%;
     transition: transform .2s;
     border: none;
     font-weight: 900;
@@ -163,23 +164,25 @@ input:hover {
 /*style for finish.html page */
 
 .congrats {
-    color:#fff;
-    font-size:2vw;
+    color: #fff;
+    font-size: 2vw;
 }
-.medal{ 
 
-    font-size:2vw;
+.medal {
+
+    font-size: 2vw;
 }
 
 .congrats p {
-    margin-left:4%;
-    font-size:2vw;
+    margin-left: 4%;
+    font-size: 2vw;
 }
-.play-again button{
-    position:absolute;
-    left:45vw;
-    margin-top:5vw;
-    font-size:110%;
+
+.play-again button {
+    position: absolute;
+    left: 45vw;
+    margin-top: 5vw;
+    font-size: 110%;
     transition: transform .2s;
 }
 
@@ -201,7 +204,8 @@ input:hover {
 
 
 @media only screen and (min-width:320px) and (max-width: 600px) {
-/* index.html page*/
+
+    /* index.html page*/
     input,
     .quiz-form button {
         width: 40vw;
@@ -231,7 +235,7 @@ input:hover {
 
     .questions-section h3 {
         font-size: 100%;
-        margin-top:20%;
+        margin-top: 20%;
     }
 
     .response-div {
@@ -239,41 +243,45 @@ input:hover {
 
     }
 
-    .answers{
-        font-size:80%;
+    .answers {
+        font-size: 80%;
     }
 
     .next-question {
 
         left: 25%;
-        padding:1% 5%;
+        padding: 1% 5%;
         top: 10%;
-        font-size:80%;
+        font-size: 80%;
         border-radius: 8px;
     }
 
 
     /*queries for finish.html page*/
     .play-again button {
-        font-size:4vw;
-        margin-left:-6%;
+        font-size: 4vw;
+        margin-left: -6%;
         margin-top: 8%;
 
     }
-    .congrats{
-        font-size:4vw;
+
+    .congrats {
+        font-size: 4vw;
     }
-     .congrats p{
-        font-size:4vw;
-        margin:1%;
+
+    .congrats p {
+        font-size: 4vw;
+        margin: 1%;
     }
 }
+
 /*media queries for  devices min width 600px and max width: 1000px*/
 @media screen and (min-width:600px) and (max-width:1200px) {
 
-    .questions-section h3{
-        margin:10%;
+    .questions-section h3 {
+        margin: 10%;
     }
+
     .response-div {
         margin: 12% 4%;
 
@@ -287,4 +295,3 @@ input:hover {
         border-radius: 8px;
     }
 }
-

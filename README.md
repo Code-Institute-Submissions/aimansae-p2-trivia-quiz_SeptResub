@@ -11,26 +11,26 @@ Trivia quiz is a very funny and simple game to test players knowledge about diff
 Here is the [link](https://aimansae.github.io/p2-trivia-quiz/) to the website.
 
 ## Table of Contents
-- [Trivia Quiz](#a-very-funny-trivia-quiz) <br>
-   - [Intrduction](##introduction)<br>
-   - [Table of Contents](#table-of-contents)<br>
-   - [User Experience](#user-experience)<br>
-   - [User Stories](#user-stories)<br>
-- [Design](#design) <br>
-   - [Typography](#typpography) <br>
-   - [Images](#images) <br>
-- [Features](#features) <br>
-   - [Home Page](#home-page) <br>
-   - [Start quiz page](#start-quiz-page)<br>
-   - [Finish Page](#finish-page)<br>   
+- [Trivia Quiz](#a-very-funny-trivia-quiz)
+   - [Intrduction](##introduction)
+   - [Table of Contents](#table-of-contents)
+   - [User Experience](#user-experience)
+   - [User Stories](#user-stories)
+- [Design](#design) 
+   - [Typography](#typpography) 
+   - [Images](#images) 
+- [Features](#features) 
+   - [Home Page](#home-page) 
+   - [Start quiz page](#start-quiz-page)
+   - [Finish Page](#finish-page)   
 - [Technologies Used](#technology-used)   
 - [Testing](#testing)
    - [Upcoming Features](#upcoming-features)
    - [Validator Testing](#validator-testing)
 - [Responsivness](#responsivness) 
--[Deployment](#deployment)
--[Credits](#credits)  
--[Media](#media)
+- [Deployment](#deployment)
+- [Credits](#credits)  
+- [Media](#media)
 
 ## User Experience
 
@@ -63,6 +63,8 @@ The idea is to create a good looking quiz that immediately proves it's purpose
  ### Typography
 
  I chose 2 main Google Fonts: Abhaya and Roboto, directly imported in my style.css file. "Abhaya" is used for the the answers option, meanwhile "Roboto" for the questions.
+
+[Back to top](#a-very-funny-trivia-quiz)
 
  ### Images
 
@@ -155,6 +157,7 @@ Additional sources were highly consulted such as [Stack Overflow](https://stacko
 - Responsive screenshot for Readme File is made via [Am I responsive](https://ui.dev/amiresponsive)
 - Colors Palette is generated via [Coolors](https://coolors.co/)
 
+[Back to top](#a-very-funny-trivia-quiz)
 
 
 

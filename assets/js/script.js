@@ -30,7 +30,7 @@ let correctAnswer = questions[countQuestions].answer;
 // verify if players answer is correct
 const active = document.querySelector('.active');
        if (clickedAnswer == correctAnswer){
-        active.style.backgroundColor = '#2afbde';
+        active.style.backgroundColor = '#31e631';
         } else {
             active.style.backgroundColor = 'red';
             let options = document.querySelectorAll('button.answers');
@@ -45,7 +45,7 @@ const active = document.querySelector('.active');
     countQuestions++;
     setTimeout(() => {
         showQuestion(countQuestions);
-    }, 2000)
+    }, 1000)
 
 }
 

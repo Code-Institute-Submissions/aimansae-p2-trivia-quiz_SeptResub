@@ -137,12 +137,13 @@ input:hover {
     left: 84%;
     height: 8%;
     top:5%;
-    padding:1% 0;
+    padding:1% 1%;
     transition: transform .2s;
     border: none;
     font-weight: 900;
     letter-spacing: 2px;
     background: #fff;
+    border-radius: 8px;
 }
 
 .next-question:hover {
@@ -155,7 +156,7 @@ input:hover {
 
 /*style for active js class */
 .active {
-    background: rgb(192 45 207);
+    background: rgb(125 45 207);
     color: white;
 }
 
@@ -238,14 +239,17 @@ input:hover {
 
     }
 
+    .answers{
+        font-size:80%;
+    }
+
     .next-question {
 
-        left: 40%;
-        height: 9%;
-        width: 27%;
-        padding:1% 1%;
+        left: 25%;
+        padding:1% 5%;
         top: 10%;
         font-size:80%;
+        border-radius: 8px;
     }
 
 
@@ -267,9 +271,11 @@ input:hover {
 /*media queries for  devices min width 600px and max width: 1000px*/
 @media screen and (min-width:600px) and (max-width:1200px) {
 
-
+    .questions-section h3{
+        margin:10%;
+    }
     .response-div {
-        margin: 8% 4%;
+        margin: 12% 4%;
 
     }
 
@@ -278,6 +284,7 @@ input:hover {
         left: 75%;
         height: 9%;
         width: 16vw;
+        border-radius: 8px;
     }
 }
 

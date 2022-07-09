@@ -18,12 +18,12 @@ let questions = [
     {
         number: 2,
         question: " What is the most used Mobile App in France in 2021?",
-        answer: "CovidTracker",
+        answer: "CovidApp",
         options: [
             "Netflix",
-            "Facebook",
-            "WhatsApp",
-            "CovidTracker"]
+            "Disney+",
+            "Tinder",
+            "CovidApp"]
 
     },
     {
@@ -31,10 +31,10 @@ let questions = [
         question: " How old is the Oldest living French person?",
         answer: "118 years",
         options: [
-            "108 years",
-            "110 years",
-            "118 years",
-            "120 years"]
+            "108",
+            "110",
+            "118",
+            "120"]
     },
     {
         number: 4,
@@ -44,7 +44,7 @@ let questions = [
             "Rochies",
             "Alps",
             "Macaroni",
-            "None of the above"]
+            "None"]
 
     },
     {
@@ -64,8 +64,8 @@ let questions = [
         options: [
             "France",
             "Germany",
-            "Italy",
-            "Netherlands"]
+            "Spain",
+            "Italy"]
 
     },
     {
@@ -108,10 +108,10 @@ let questions = [
         question: "When is France National day?",
         answer: "July 14th",
         options: [
-            "January 3rd",
+            "Jan 3rd",
             "March 15th",
             "July 14th",
-            "October 23th"]
+            "Oct 10th"]
 
 
     }

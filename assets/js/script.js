@@ -1,9 +1,8 @@
 window.onload = function () {
+
     showQuestion(0);
 
 }
-/*
-*/
 
 function sendForm(event) {
     event.preventDefault();
@@ -20,24 +19,30 @@ function sendForm(event) {
 
 
 let countQuestions = 0;
-//let score = 0;
 
 function nextQuestion() {
     if (countQuestions == questions.length - 1) {
         location.href = "finish.html";
         return;
     }
-    let clickedAnswer = document.querySelector('button.answers.active').innerHTML;
-    // verify if payers answer is correct, gets 10 points
-    if (clickedAnswer == questions[countQuestions].answer) {
-        score += 10;
-        sessionStorage.setItem('userScore', score);
-    }
-
+let clickedAnswer = document.querySelector('button.answers.active').textContent;
+let correctAnswer = questions[countQuestions].answer;
+// verify if players answer is correct
+const active = document.querySelector('.active');
+       if (clickedAnswer == correctAnswer){
+        active.style.backgroundColor = 'green';
+        } else {
+            active.style.backgroundColor = 'red';
+           }
+       
     countQuestions++;
-    showQuestion(countQuestions);
+    setTimeout(() => {
+        showQuestion(countQuestions);
+    }, 1000)
 
 }
+
+//show next question when the button is clicked
 
 function showQuestion(count) {
     let question = document.getElementById('questions')
@@ -69,3 +74,11 @@ function active() {
     }
 
 }
+
+function testHandler(e) {
+    if (e.target.classList.contains('answers')) {
+        console.log(e.target.innerText);
+    }
+}
+
+document.addEventListener('click', testHandler);

@@ -29,7 +29,7 @@ let questions = [
     {
         number: 3,
         question: " How old is the Oldest living French person?",
-        answer: "118 years",
+        answer: "118",
         options: [
             "108",
             "110",

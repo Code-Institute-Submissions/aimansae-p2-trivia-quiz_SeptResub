@@ -1,7 +1,6 @@
 window.onload = function () {
 
     showQuestion(0);
-
 }
 
 function sendForm(event) {
@@ -14,9 +13,7 @@ function sendForm(event) {
 
     //start game upon click on 'start game'
     location.href = 'quiz.html';
-
 }
-
 
 let countQuestions = 0;
 
@@ -71,15 +68,10 @@ function activeCheck() {
                 if (options[x].classList.contains('active')) {
                     options[x].classList.remove('active');
                 }
-
-
             }
-
             options[i].classList.add('active');
-
         };
     }
-
 }
 
 function testHandler(e) {

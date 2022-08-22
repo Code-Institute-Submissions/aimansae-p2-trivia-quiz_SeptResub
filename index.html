@@ -15,7 +15,7 @@
     <div class="container">
         <div class="welcome-quiz">
             <form class="quiz-form" onsubmit="sendForm(event)" name="quiz-form">
-                <input type="text" id="username" name="username" placeholder="Insert a username:" required>
+                <input pattern="[a-zA-Z]" oninvalid="setCustomValidity('Min length 3. Please enter letters only. ')" type="text" id="username" name="username" placeholder="Insert a username:" required minlength="3">
                 <button type="submit">START QUIZ</button>
             </form>
 

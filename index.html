@@ -12,10 +12,13 @@
 </head>
 
 <body>
+    <header>
+        <h1 id="welcome-title">Welcome to Quiz for Travel lovers</h1> 
+    </header>
     <div class="container">
         <div class="welcome-quiz">
             <form class="quiz-form" onsubmit="sendForm(event)" name="quiz-form">
-                <input pattern="[a-zA-Z]" oninvalid="setCustomValidity('Min length 3. Please enter letters only. ')" type="text" id="username" name="username" placeholder="Insert a username:" required minlength="3">
+                <input pattern="[a-zA-Z]+" oninvalid="setCustomValidity('Min length 3. Please enter letters only. ')" type="text" id="username" name="username" placeholder="Insert a username:" required minlength="3">
                 <button type="submit">START QUIZ</button>
             </form>
 

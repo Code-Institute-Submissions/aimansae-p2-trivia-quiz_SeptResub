@@ -12,7 +12,12 @@ body {
     background: url('../images/background-image.jpg') no-repeat center center fixed;
     background-size: cover;
 }
+#welcome-title{
+    color:#fff;
+    text-align: center;
+    margin-top: 20%;
 
+}
 .container {
     display: flex;
     justify-content: center;

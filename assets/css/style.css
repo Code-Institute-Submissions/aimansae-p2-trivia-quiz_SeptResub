@@ -18,6 +18,14 @@ body {
     margin-top: 20%;
 
 }
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+
+}
 .container {
     display: flex;
     justify-content: center;

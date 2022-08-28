@@ -1,6 +1,6 @@
 # A Very Funny Trivia Quiz
 
-![Responsive Image](assets/images/AmIresponsive-website.png)
+![Responsive Image](assets/images/amIresponsive-website.png)
 
 ## Introduction
 

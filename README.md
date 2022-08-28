@@ -77,6 +77,8 @@ The idea is to create a good looking quiz that immediately proves it's purpose
 ### Home Page
 
 The Home Page lands to a from where the player has to select a username in order to play the game. The "hover" effect placed on the "start quiz" button makes user's experience even more simple nad pleasant. 
+In future this step will be used in order to be able to share score with friends, or download it.
+The form is fully validated, empty input or numers or symbols are not accepted.
 
 ![Home Page](assets/images/home-page-screenshot.png)
 
@@ -102,10 +104,13 @@ After completing the 10 questions the player will see the last page that congrut
 - [CSS](https://bit.ly/3yTb9KH)
 - [JavaScript](https://bit.ly/3c3CH71)
 
-## Testing
+## Testing and bugs
 - The testing is made throughout the entire project as I was building it via Google Dev Tool
 - The form presents a required attribute so if the user doesn't fill in a name a warning will appear
 - All buttons were tested and are working as programmed
+- Form validation was initially made throug only HTML code, implemented JS alert function fin case it is submitted empty or with numbers or symbols.
+- Console was presenting errors such as "uncaught error cannot set property 'innerhtml'". This was due to the fact that the entire script was wrongly loded in index.html file, looking for codes not used on the file itself.
+Fix the error by separating the js code needed for validation in a separate js file, and loaded it in index.html file so just the relevant code is used. . 
 
 ### Upcoming Features
 Due to all the dificulties faces in future I plan to implement additional features for a better user experience. 

@@ -80,7 +80,7 @@ The Home Page lands to a from where the player has to select a username in order
 In future this step will be used in order to be able to share score with friends, or download it.
 The form is fully validated, empty input or numers or symbols are not accepted.
 
-![Home Page](assets/images/home-page-screenshot.png.png)
+![Home Page](assets/images/home-page-screenshot.png)
 
 ### Start quiz page
 
@@ -111,8 +111,9 @@ After completing the 10 questions the player will see the last page that congrut
 - Form validation was initially made throug only HTML code, implemented JS alert function fin case it is submitted empty or with numbers or symbols.
 - Console was presenting errors such as "uncaught error cannot set property 'innerhtml'". This was due to the fact that the entire script was wrongly loded in index.html file, looking for codes not used on the file itself.
 Fix the error by separating the js code needed for validation in a separate js file, and loaded it in index.html file so just the relevant code is used. 
-- Conole presented another error: uncqaught TypeError: cannot read properties of null (reading "textContent" at nextQuestion), due to lack of defensive program. 
-Fix the error by implementing the following code: 
+- Conole presented another error: uncqaught TypeError: cannot read properties of null (reading "textContent" at nextQuestion), when user clicked nextquestion button, without selecting an answer.
+
+This is caused due to lack of defensive program. Fix the error by implementing the following code: 
 
 let clickedAnswer = document.querySelector('button.answers.active');
 if (!clickedAnswer) return;

@@ -12,20 +12,22 @@ body {
     background: url('../images/background-image.jpg') no-repeat center center fixed;
     background-size: cover;
 }
-#welcome-title{
-    color:#fff;
+
+#welcome-title {
+    color: #fff;
     text-align: center;
     margin-top: 20%;
 
 }
 
-.form-container{
+.form-container {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 2%;
 
 }
+
 .container {
     display: flex;
     justify-content: center;
@@ -205,7 +207,7 @@ input:hover {
     background: #2afbde;
 }
 
-/*style to show correct asnwer is player clicks on the wrong one */
+/*style to show correct answer is player clicks on the wrong one */
 
 .green-answer {
     background-color: #31e631;
@@ -219,6 +221,12 @@ input:hover {
 @media only screen and (min-width:320px) and (max-width: 600px) {
 
     /* index.html page*/
+
+    #welcome-title {
+        font-size: 90%;
+        margin: 50% 0 0 4%;
+    }
+
     input,
     .quiz-form button {
         width: 40vw;
@@ -290,6 +298,19 @@ input:hover {
 
 /*media queries for  devices min width 600px and max width: 1000px*/
 @media screen and (min-width:600px) and (max-width:1200px) {
+
+    /*queries for index.html page*/
+
+    #welcome-title {
+        font-size: 90%;
+        margin: 40% 0 0 5%
+    }
+
+    input,
+    .quiz-form button {
+        width: 30vw;
+    }
+
 
     .questions-section h3 {
         margin: 10%;

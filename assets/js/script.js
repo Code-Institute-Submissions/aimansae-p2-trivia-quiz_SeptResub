@@ -37,7 +37,11 @@ function nextQuestion() {
         location.href = "finish.html";
         return;
     }
-    let clickedAnswer = document.querySelector('button.answers.active').textContent;
+    let clickedAnswer = document.querySelector('button.answers.active');
+    if (!clickedAnswer) return;
+    else {
+	    clickedAnswer = clickedAnswer.textContent;
+}
     let correctAnswer = questions[countQuestions].answer;
     // verify if players answer is correct
     const active = document.querySelector('.active');

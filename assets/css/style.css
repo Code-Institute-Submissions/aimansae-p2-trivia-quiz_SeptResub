@@ -24,7 +24,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2%;
+    margin-top: 3%;
 
 }
 
@@ -171,6 +171,7 @@ input:hover {
 
 
 /*style for active js class */
+
 .active {
     background: rgb(125 45 207);
     color: white;
@@ -224,7 +225,7 @@ input:hover {
 
     #welcome-title {
         font-size: 90%;
-        margin: 50% 0 0 4%;
+        margin: 50% 0 0 14%;
     }
 
     input,
@@ -283,7 +284,6 @@ input:hover {
         font-size: 4vw;
         margin-left: -6%;
         margin-top: 8%;
-
     }
 
     .congrats {

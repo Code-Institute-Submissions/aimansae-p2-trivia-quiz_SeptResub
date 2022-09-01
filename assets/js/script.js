@@ -5,31 +5,32 @@ window.onload = function () {
 
 function sendForm(event) {
     event.preventDefault();
-    if (validateForm()){
-    let quizForm = document.forms['quiz-form']['username'].value;
+    if (validateForm()) {
+        let quizForm = document.forms['quiz-form']['username'].value;
 
-    // code to store player's name
+        // code to store player's name
 
-    sessionStorage.setItem('username', quizForm);
+        sessionStorage.setItem('username', quizForm);
 
-    //start game upon click on 'start game'
-    location.href = 'quiz.html';
+        // start game upon clicking on 'start game'
+        location.href = 'quiz.html';
+    }
 }
-}
 
-// form validation empty input or numbers not accepted.
+// form validation empty input or numbers not accepted
+
 function validateForm() {
     let x = document.forms["quiz-form"]["username"].value;
     if (x == "") {
-      alert("Please insert a username. Min 3 characters");
-      return false;
+        alert("Please insert a username. Min 3 characters");
+        return false;
     }
-    else{
+    else {
         return true;
     }
- }
+}
 
- 
+
 let countQuestions = 0;
 
 function nextQuestion() {
@@ -40,10 +41,10 @@ function nextQuestion() {
     let clickedAnswer = document.querySelector('button.answers.active');
     if (!clickedAnswer) return;
     else {
-	    clickedAnswer = clickedAnswer.textContent;
-}
+        clickedAnswer = clickedAnswer.textContent;
+    }
     let correctAnswer = questions[countQuestions].answer;
-    // verify if players answer is correct
+    // verify if player's answer is correct
     const active = document.querySelector('.active');
     if (clickedAnswer == correctAnswer) {
         active.style.backgroundColor = '#31e631';

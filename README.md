@@ -1,6 +1,6 @@
 # A Very Funny Trivia Quiz
 
-![Responsive Image](assets/images/amIresponsive-website.png)
+![Responsive Image](assets/images/amiresponsive-website.png)
 
 ## Introduction
 
@@ -121,11 +121,17 @@ else {
 	clickedAnswer = clickedAnswer.textContent;
 }
 
+## Unfixed Bug
+- Sometimes, when a user inserts a wrong input, tries to insert the right one the form seems not to recognise the correct format, unless you refresh the page. This bug is encountered only a very few times. Therefore not yet unbugged.
+
 ### Upcoming Features
-Due to all the dificulties faces in future I plan to implement additional features for a better user experience. 
+Due to all the dificulties faced, in future I plan to implement additional features for a better user experience. 
+
+- The username is asked already via the form so in future this will be used to welcome the user throughout the game. (i.e: Welcome{user_name} to Trivia QUiz!)
 - A score function will be added to keep track of the user's score and this will be shown at the end of the game
 - A 15 seconds timer per question will be added to keep the excitement and challenge
 - An option to share the scores and results will be implemented so that the player can share his results with anyone
+- Improve and guarantee a faster navigation through the pages
 
 
 ### Validator Testing

@@ -122,7 +122,8 @@ else {
 }
 
 ## Unfixed Bug
-- Sometimes, when a user inserts a wrong input, tries to insert the right one the form seems not to recognise the correct format, unless you refresh the page. This bug is encountered only a very few times. Therefore not yet unbugged.
+- Sometimes, when a user inserts a wrong input, tries to insert the right one the form seems not to recognise the correct format, unless you refresh the page. This bug is encountered only a very few times. Therefore not yet debugged.
+- 
 
 ### Upcoming Features
 Due to all the dificulties faced, in future I plan to implement additional features for a better user experience. 

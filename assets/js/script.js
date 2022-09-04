@@ -24,8 +24,7 @@ function validateForm() {
     if (x == "") {
         alert("Please insert a username. Min 3 characters");
         return false;
-    }
-    else {
+    } else {
         return true;
     }
 }
@@ -80,6 +79,7 @@ function showQuestion(count) {
                 </div>`;
     activeCheck();
 }
+
 function activeCheck() {
     let options = document.querySelectorAll('button.answers');
     for (let i = 0; i < options.length; i++) {

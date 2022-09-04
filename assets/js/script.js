@@ -1,7 +1,7 @@
 window.onload = function () {
 
     showQuestion(0);
-}
+};
 
 function sendForm(event) {
     event.preventDefault();

@@ -24,7 +24,8 @@ Here is the [link](https://aimansae.github.io/p2-trivia-quiz/) to the website.
    - [Start quiz page](#start-quiz-page)
    - [Finish Page](#finish-page)   
 - [Technologies Used](#technology-used)   
-- [Testing](#testing)
+- [Testing and Bugs](#testing-and-bugs)
+   - [Unfixed bugs](#unfixed-bug)
    - [Upcoming Features](#upcoming-features)
    - [Validator Testing](#validator-testing)
 - [Responsivness](#responsivness) 
@@ -123,12 +124,12 @@ else {
 
 ## Unfixed Bug
 - Sometimes, when a user inserts a wrong input, tries to insert the right one the form seems not to recognise the correct format, unless you refresh the page. This bug is encountered only a very few times. Therefore not yet debugged.
-- 
+
 
 ### Upcoming Features
 Due to all the dificulties faced, in future I plan to implement additional features for a better user experience. 
 
-- The username is asked already via the form so in future this will be used to welcome the user throughout the game. (i.e: Welcome{user_name} to Trivia QUiz!)
+- The username is asked already via the form so in future this will be used to welcome the user throughout the game. (i.e: Welcome{user_name} to Trivia Quiz!)
 - A score function will be added to keep track of the user's score and this will be shown at the end of the game
 - A 15 seconds timer per question will be added to keep the excitement and challenge
 - An option to share the scores and results will be implemented so that the player can share his results with anyone
